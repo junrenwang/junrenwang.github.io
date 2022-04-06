@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+JUNREN WANG
+• (217) 721-3798 • junrenw2@illinois.edu
+EDUCATION                                                                  
+University of Illinois at Urbana-Champaign
+• MS in Environmental Engineering                                                                     Aug 2018-Aug 2020
+• PhD in Civil Engineering                                                                                            Aug 2020-Present 
+• Major GPA: 3.94/4.00
+• Courses related: CS411 Database Systems, CS412 Intro to Data Mining, CS483 Applied Parallel Programming, CS440 Artificial Intelligence, IE531 Algorithms for Data Analytics, STAT 425 Statistical Modeling, STAT429 Time Series Analysis 
+                               
+EXPERIENCE        
+Food Flow Modelling（Research Assistant, UIUC）                                           Jun 2020-present 
+• Analyze the network characteristics for household-scale commodity level in Zambia, including centrality, degree, and strength distribution.
+• Apply logistic regression, spatial correlation, and multi-layer correlations to distinguish the drivers of the sharing that occurs between households in Zambia.
+• Employ logistic regression and linear programming in conjunction with the gamma hurdle model, to estimate the existence of links and weight of county-level food flow by time. 
+International Water Management Institute (Internship)                         Sep 2020-Feb 2021
+• Integrate various data sources including satellite data and applies in machine learning models to develop reliable products.
+• Evaluate various machine learning models and optimize appropriate models for maize yield prediction.
+• Assist the WRDR team in developing an SPI spatial model in Google Colab.         
+Charity Website Demo （Course project, UIUC）                                          Mar 2020-May 2020
+• Create a charity website demo with relational and non-relational databases through MySQL and Neo4j and python Django framework.
 
-You can use the [editor on GitHub](https://github.com/junrenwang/junrenwang.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+TECHNICAL SKILLS                                                            
+• Applications: MySQL, MongoDB, AWS, Excel/Word/PowerPoint, ArcGIS, AutoCAD
+• Programming Language: Python, Java, JavaScript, R
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/junrenwang/junrenwang.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+PUBLICATIONS     
+• Von Gnechten, R., Wang, J., Konar, M., Baylis, K., Anderson, P., Giroux, S., ... & Evans, T. (2020). A gravity model and network analysis of household food sharing in Zambia. Environmental Research Letters, 15(11), 115010.                                                       
+• Jiaqi Wang, Miaolian Hua, Chaoyang Cai, Jiajie Hu, Junren Wang, Hongrui Yang, Baolan Hu. (2019). Spatial-temporal pattern of sulfate-dependent anaerobic methane oxidation in an intertidal zone of the East China Sea. Applied & Environmental Microbiology, 85(7), 1–41. 
+• Wang, J., Cai, C., Li, Y., Hua, M., Wang, J., Yang, H., Hu, B. (2019). Denitrifying Anaerobic Methane Oxidation: A Previously Overlooked Methane Sink in Intertidal Zone. Environmental Science & Technology, 53(1), 203–212. 
