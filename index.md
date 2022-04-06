@@ -16,7 +16,7 @@ University of Illinois at Urbana-Champaign
 - Integrate various data sources including satellite data and applies in machine learning models to develop reliable products.
 - Evaluate various machine learning models and optimize appropriate models for maize yield prediction.
 - Assist the WRDR team in developing an SPI spatial model in Google Colab.         
-Charity Website Demo （Course project, UIUC）                                          Mar 2020-May 2020
+#### Charity Website Demo （Course project, UIUC）                                          Mar 2020-May 2020
 - Create a charity website demo with relational and non-relational databases through MySQL and Neo4j and python Django framework.
 
 ### TECHNICAL SKILLS                                                            
@@ -24,7 +24,7 @@ Charity Website Demo （Course project, UIUC）                                 
 - Programming Language: Python, Java, JavaScript, R
 
 ### PUBLICATIONS     
-- Karakoc, D. B., <b>Wang, J.</b>, & Konar, M. (2022). Food flows between counties in the United States from 2007 to 2017. Environmental Research Letters, 17(3), 034035.
-- Von Gnechten, R., <b>Wang, J.</b> , Konar, M., Baylis, K., Anderson, P., Giroux, S., ... & Evans, T. (2020). A gravity model and network analysis of household food sharing in Zambia. Environmental Research Letters, 15(11), 115010.                                                       
-- Jiaqi Wang, Miaolian Hua, Chaoyang Cai, Jiajie Hu, <b>Junren Wang</b>, Hongrui Yang, Baolan Hu. (2019). Spatial-temporal pattern of sulfate-dependent anaerobic methane oxidation in an intertidal zone of the East China Sea. Applied & Environmental Microbiology, 85(7), 1–41. 
-- Wang, J., Cai, C., Li, Y., Hua, M., <b>Wang, J.</b>, Yang, H., Hu, B. (2019). Denitrifying Anaerobic Methane Oxidation: A Previously Overlooked Methane Sink in Intertidal Zone. Environmental Science & Technology, 53(1), 203–212. 
+- Karakoc, D. B., **Wang, J.**, & Konar, M. (2022). Food flows between counties in the United States from 2007 to 2017. Environmental Research Letters, 17(3), 034035.
+- Von Gnechten, R., **Wang, J.** , Konar, M., Baylis, K., Anderson, P., Giroux, S., ... & Evans, T. (2020). A gravity model and network analysis of household food sharing in Zambia. Environmental Research Letters, 15(11), 115010.                                                       
+- Jiaqi Wang, Miaolian Hua, Chaoyang Cai, Jiajie Hu, **Junren Wang**, Hongrui Yang, Baolan Hu. (2019). Spatial-temporal pattern of sulfate-dependent anaerobic methane oxidation in an intertidal zone of the East China Sea. Applied & Environmental Microbiology, 85(7), 1–41. 
+- Wang, J., Cai, C., Li, Y., Hua, M., **Wang, J.**, Yang, H., Hu, B. (2019). Denitrifying Anaerobic Methane Oxidation: A Previously Overlooked Methane Sink in Intertidal Zone. Environmental Science & Technology, 53(1), 203–212. 
