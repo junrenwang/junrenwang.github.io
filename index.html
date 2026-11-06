@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Junren Wang | Supply Chain & Network Modeling</title>
+<meta name="description" content="Junren Wang, PhD: supply chain analytics, freight flow and network modeling, logistics infrastructure decision support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --bg-alt:#f6f8fa; --text:#1f2328; --muted:#59636e;
+    --line:#e3e7eb; --accent:#0b6e4f; --accent-soft:#e6f2ed;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:16px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+  nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+  nav .brand{font-weight:700;color:var(--text)}
+  nav ul{list-style:none;display:flex;gap:20px;margin:0;padding:0;font-size:14px}
+  nav ul a{color:var(--muted)}
+  @media (max-width:640px){nav ul{display:none}}
+
+  header{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+  .eyebrow{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin:0 0 8px}
+  h1{font-size:44px;line-height:1.1;margin:0 0 16px}
+  .lede{font-size:19px;color:var(--muted);max-width:680px;margin:0 0 28px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:10px 18px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--accent)}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn:hover{text-decoration:none;opacity:.9}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+  .stat{background:var(--bg-alt);border-radius:10px;padding:16px}
+  .stat b{display:block;font-size:28px;color:var(--accent)}
+  .stat span{font-size:14px;color:var(--muted)}
+  @media (max-width:640px){h1{font-size:34px}.stats{grid-template-columns:repeat(2,1fr)}}
+
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  section.alt{background:var(--bg-alt)}
+  h2{font-size:26px;margin:0 0 8px}
+  .sub{color:var(--muted);margin:0 0 28px}
+
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px}
+  .card h3{font-size:17px;margin:0 0 6px}
+  .card .problem{font-size:14px;color:var(--muted);margin:0 0 12px}
+  .card ul{margin:0 0 14px;padding-left:18px;font-size:15px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px}
+
+  .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media (max-width:720px){.skills{grid-template-columns:1fr}}
+  .skills h3{font-size:15px;margin:0 0 8px;color:var(--accent)}
+  .skills ul{margin:0;padding-left:18px;font-size:15px}
+
+  .edu{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .edu p{margin:0}
+  .edu .when{color:var(--muted)}
+
+  .pubs{list-style:none;padding:0;margin:0}
+  .pubs li{padding:14px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:56px 1fr 90px;gap:12px}
+  .pubs li:first-child{border-top:none}
+  .pubs .yr{color:var(--muted);font-weight:600}
+  .pubs .t{font-weight:600}
+  .pubs .meta{font-size:14px;color:var(--muted)}
+  .pubs .cite{font-size:13px;color:var(--muted);text-align:right}
+  .me{text-decoration:underline;text-underline-offset:2px}
+  @media (max-width:640px){.pubs li{grid-template-columns:1fr}.pubs .cite{text-align:left}}
+
+  footer{padding:40px 0;color:var(--muted);font-size:14px}
+  .contact{display:flex;flex-wrap:wrap;gap:20px;font-size:16px;margin-bottom:16px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">Junren Wang</a>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Supply Chain Analytics · Network Modeling · Operations Research</p>
+    <h1>Junren Wang, PhD</h1>
+    <p class="lede">I build data-driven models of how goods move: freight flows, transportation networks, cold chains, and demand. I use them to help decision-makers choose where to invest, cut cost and emissions, and make supply chains more resilient to disruption.</p>
+    <div class="btns">
+      <a class="btn primary" href="resume.pdf">Download Resume</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=RMZJd2MAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>8</b><span>peer-reviewed papers</span></div>
+      <div class="stat"><b>119+</b><span>citations</span></div>
+      <div class="stat"><b>4</b><span>countries' supply chains modeled (US, China, Zambia, Tanzania)</span></div>
+      <div class="stat"><b>3,000+</b><span>US counties in a 10-year freight flow dataset</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="projects" class="alt">
+  <div class="wrap">
+    <h2>Featured Projects</h2>
+    <p class="sub">Research work, framed as the supply chain problem each one solves.</p>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Where to invest in logistics infrastructure</h3>
+        <p class="problem">Problem: limited budgets, many candidate road and irrigation projects. Which ones make the food system most resilient?</p>
+        <ul>
+          <li>Built an integrated spatial decision-support framework that ranks transportation and irrigation investments.</li>
+          <li>Combines production, transport network, and risk data into one prioritization tool.</li>
+        </ul>
+        <div class="tags"><span class="tag">Decision support</span><span class="tag">Network design</span><span class="tag">Resilience</span><span class="tag">GIS</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Transport upgrades and commodity supply chains</h3>
+        <p class="problem">Problem: how do road improvements change cost and flows in maize and cassava supply chains?</p>
+        <ul>
+          <li>Modeled maize and cassava supply chains in Zambia across the transport network.</li>
+          <li>Ran infrastructure scenarios to estimate impacts on transport cost and trade flows.</li>
+        </ul>
+        <div class="tags"><span class="tag">Transportation modeling</span><span class="tag">Scenario analysis</span><span class="tag">Logistics cost</span></div>
+      </div>
+
+      <div class="card">
+        <h3>National freight flow dataset (US, 2007–2017)</h3>
+        <p class="problem">Problem: official freight data is too coarse to see county-to-county food movements.</p>
+        <ul>
+          <li>Estimated food flows between all US counties across a decade of data.</li>
+          <li>My most-cited work (40+ citations); a resource others use for supply chain and risk analysis.</li>
+        </ul>
+        <div class="tags"><span class="tag">Origin–destination flows</span><span class="tag">Big data</span><span class="tag">Freight analytics</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Cold chain carbon footprint</h3>
+        <p class="problem">Problem: refrigerated logistics are energy-heavy. Where do the emissions actually come from?</p>
+        <ul>
+          <li>Quantified the carbon footprint of US cold chain food flows.</li>
+          <li>Relevant to Scope 3 emissions accounting and sustainable logistics planning.</li>
+        </ul>
+        <div class="tags"><span class="tag">Cold chain</span><span class="tag">Emissions accounting</span><span class="tag">Sustainability</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Demand under urbanization</h3>
+        <p class="problem">Problem: as cities grow, how does demand for different food products change?</p>
+        <ul>
+          <li>Estimated household demand for foodstuffs and nutrients in Zambia and Tanzania.</li>
+          <li>Gives demand-side inputs for supply planning and market forecasting.</li>
+        </ul>
+        <div class="tags"><span class="tag">Demand estimation</span><span class="tag">Econometrics</span><span class="tag">Survey data</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Supply risk from climate shocks</h3>
+        <p class="problem">Problem: how do producers adjust their product mix after droughts and other climate shocks?</p>
+        <ul>
+          <li>Analyzed household- and district-level panel data on crop diversification in Zambia.</li>
+          <li>Links disruption events to supply-side behavior (19 citations).</li>
+        </ul>
+        <div class="tags"><span class="tag">Supply risk</span><span class="tag">Panel data</span><span class="tag">Disruption analysis</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Multilayer economic networks</h3>
+        <p class="problem">Problem: how are trade and resource flows connected across regions of a large economy?</p>
+        <ul>
+          <li>Built multilayer networks of economic and virtual-water flows across China.</li>
+        </ul>
+        <div class="tags"><span class="tag">Network analysis</span><span class="tag">Input–output models</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Gravity models of distribution networks</h3>
+        <p class="problem">Problem: what drives how goods are shared between households?</p>
+        <ul>
+          <li>Applied gravity models and network analysis to household food-sharing networks in Zambia.</li>
+        </ul>
+        <div class="tags"><span class="tag">Gravity model</span><span class="tag">Network analysis</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div style="display:grid;gap:18px">
+      <div class="card">
+        <div class="edu"><p><b>Research Assistant, Food Flow &amp; Supply Chain Modeling</b> · University of Illinois Urbana-Champaign</p><p class="when">2020 – Present</p></div>
+        <ul style="margin:10px 0 0;padding-left:18px">
+          <li>Estimated county-level US food flows over time using logistic regression, linear programming, and a gamma hurdle model to predict which links exist and how much moves on each.</li>
+          <li>Modeled transport-infrastructure scenarios for maize and cassava supply chains and built a decision-support framework to prioritize irrigation and road investments.</li>
+          <li>Quantified the carbon footprint of US cold chain food flows.</li>
+          <li>Analyzed commodity-level household networks in Zambia (centrality, degree, strength distributions) with logistic regression and spatial correlation.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="edu"><p><b>Data Science Intern</b> · International Water Management Institute</p><p class="when">Sep 2020 – Feb 2021</p></div>
+        <ul style="margin:10px 0 0;padding-left:18px">
+          <li>Integrated satellite and other data sources into machine learning models; evaluated and tuned models for maize yield prediction.</li>
+          <li>Helped build a spatial drought index (SPI) model in Google Colab.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">Methods and tools I use to analyze supply chains.</p>
+    <div class="skills">
+      <div>
+        <h3>Supply Chain & OR</h3>
+        <ul>
+          <li>Freight / commodity flow modeling</li>
+          <li>Transportation network analysis</li>
+          <li>Infrastructure investment prioritization</li>
+          <li>Scenario & resilience analysis</li>
+          <li>Demand estimation</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Data & Modeling</h3>
+        <ul>
+          <li>Python, R, SQL (MySQL, MongoDB), Java, JavaScript</li>
+          <li>Linear programming, regression, machine learning</li>
+          <li>Network analysis &amp; gravity models</li>
+          <li>Econometrics &amp; panel data</li>
+          <li>Large-scale data integration</li>
+          <li>Emissions / footprint accounting</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Spatial & Communication</h3>
+        <ul>
+          <li>GIS (ArcGIS) and spatial analysis</li>
+          <li>AWS, Google Colab</li>
+          <li>Data visualization</li>
+          <li>Technical writing (8 publications)</li>
+          <li>Cross-disciplinary, international collaboration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="card" style="display:grid;gap:18px">
+      <div class="edu">
+        <div>
+          <p><b>PhD, Civil Engineering</b></p>
+          <p>University of Illinois Urbana-Champaign</p>
+          <p style="color:var(--muted);font-size:14px">Research on food supply chains, freight flows, transportation infrastructure, and network modeling</p>
+        </div>
+        <p class="when">2020 – 2025</p>
+      </div>
+      <div class="edu">
+        <div>
+          <p><b>MS, Environmental Engineering</b></p>
+          <p>University of Illinois Urbana-Champaign · GPA 3.94/4.00</p>
+        </div>
+        <p class="when">2018 – 2020</p>
+      </div>
+      <p style="margin:0;font-size:14px;color:var(--muted)"><b style="color:var(--text)">Relevant coursework:</b> Algorithms for Data Analytics (IE 531), Database Systems (CS 411), Data Mining (CS 412), Artificial Intelligence (CS 440), Applied Parallel Programming (CS 483), Statistical Modeling (STAT 425), Time Series Analysis (STAT 429)</p>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <h2>Publications</h2>
+    <p class="sub">Full list on <a href="https://scholar.google.com/citations?user=RMZJd2MAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>. Citation counts as of Nov 2026.</p>
+    <ol class="pubs" id="pubs"></ol>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2 style="color:var(--text)">Contact</h2>
+    <p class="sub">Seattle, WA · Open to supply chain analyst, operations research, and logistics modeling roles.</p>
+    <div class="contact">
+      <a href="mailto:junrenw2@gmail.com">junrenw2@gmail.com</a>
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/junrenwang" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=RMZJd2MAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+    <p>© 2026 Junren Wang</p>
+  </div>
+</footer>
+
+<script>
+  const pubs = [
+    ["2026","Prioritizing irrigation and transportation investments for resilient food systems: an integrated spatial decision-support framework","J Wang, M Konar","Environmental Research: Infrastructure and Sustainability 6(3), 035019",0],
+    ["2026","Demand for foodstuffs and nutrients under urbanization in Zambia and Tanzania","J Wang, M Konar, K Baylis, P Hadunka, B Mulenga","Agriculture & Food Security 15(1), 23",1],
+    ["2025","Impact of current and historical climate shocks on crop diversification in Zambia: Insights from household- and district-level observations","J Wang, M Konar, PN Anderson, P Hadunka, B Mulenga","Climate Risk Management 47, 100683",19],
+    ["2023","Potential impacts of transportation infrastructure improvements to maize and cassava supply chains in Zambia","J Wang, M Konar, K Baylis, L Estes, P Hadunka, S Xiong, K Caylor","Environmental Research: Infrastructure and Sustainability 3(4), 045006",10],
+    ["2022","Economic and virtual water multilayer networks in China","J Wang, M Konar, C Dalin, Y Liu, AS Stillwell, M Xu, T Zhu","Journal of Cleaner Production 381, 135041",15],
+    ["2022","The carbon footprint of cold chain food flows in the United States","J Wang, DB Karakoc, M Konar","Environmental Research: Infrastructure and Sustainability 2(2), 021002",23],
+    ["2022","Food flows between counties in the United States from 2007 to 2017","DB Karakoc, J Wang, M Konar","Environmental Research Letters 17(3), 034035",42],
+    ["2020","A gravity model and network analysis of household food sharing in Zambia","R Von Gnechten, J Wang, M Konar, K Baylis, P Anderson, S Giroux, et al.","Environmental Research Letters 15(11), 115010",9]
+  ];
+  const ol = document.getElementById("pubs");
+  for (const [yr,title,authors,venue,cites] of pubs) {
+    const li = document.createElement("li");
+    const q = "https://scholar.google.com/scholar?q=" + encodeURIComponent('"' + title + '"');
+    li.innerHTML = `<span class="yr">${yr}</span>
+      <div><a class="t" href="${q}" target="_blank" rel="noopener">${title}</a>
+      <div class="meta">${authors.replace("J Wang",'<span class="me">J Wang</span>')}</div>
+      <div class="meta"><i>${venue}</i></div></div>
+      <span class="cite">${cites ? cites + (cites === 1 ? " citation" : " citations") : ""}</span>`;
+    ol.appendChild(li);
+  }
+</script>
+</body>
+</html>
