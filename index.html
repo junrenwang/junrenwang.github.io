@@ -143,6 +143,42 @@
         </div>
       </div>
 
+      <div class="card featured">
+        <figure>
+          <svg viewBox="0 0 360 400" role="img" aria-label="Diagram: national freight data for 132 regions is downscaled to 3,134 counties, giving 206 million county-to-county flows" style="width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff">
+            <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0b6e4f"/></marker></defs>
+            <rect x="20" y="16" width="320" height="76" rx="10" fill="#f6f8fa" stroke="#e3e7eb"/>
+            <text x="180" y="40" text-anchor="middle" font-size="13" fill="#59636e">National freight data (Freight Analysis Framework)</text>
+            <text x="180" y="72" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2328">132 regions · 17,292 links</text>
+            <line x1="180" y1="96" x2="180" y2="146" stroke="#0b6e4f" stroke-width="2.5" marker-end="url(#ar2)"/>
+            <text x="194" y="118" font-size="13" font-weight="600" fill="#0b6e4f">Downscale with ML +</text>
+            <text x="194" y="136" font-size="13" font-weight="600" fill="#0b6e4f">linear programming</text>
+            <rect x="20" y="152" width="320" height="76" rx="10" fill="#e6f2ed" stroke="#0b6e4f"/>
+            <text x="180" y="176" text-anchor="middle" font-size="13" fill="#59636e">County food flows (Food Flow Model)</text>
+            <text x="180" y="208" text-anchor="middle" font-size="22" font-weight="700" fill="#0b6e4f">3,134 counties · ~9.8M links</text>
+            <text x="180" y="258" text-anchor="middle" font-size="14" fill="#1f2328">× 7 commodity groups × 3 years</text>
+            <text x="180" y="288" text-anchor="middle" font-size="22" font-weight="700" fill="#0b6e4f">= 206 million flows</text>
+            <line x1="20" y1="310" x2="340" y2="310" stroke="#e3e7eb"/>
+            <text x="20" y="334" font-size="13" font-weight="600" fill="#1f2328">Hubs that stay central, 2007–2017</text>
+            <text x="20" y="356" font-size="13" fill="#59636e">Los Angeles CA · Cook IL · Harris TX ·</text>
+            <text x="20" y="376" font-size="13" fill="#59636e">Maricopa AZ · Shelby TN · Riverside CA · Bexar TX</text>
+          </svg>
+          <figcaption>How the model works and what it covers. Sources: Karakoc, Wang &amp; Konar (2022) and its open dataset; hub counties from farmdoc daily (2023).</figcaption>
+        </figure>
+        <div>
+          <h3>County-to-county food freight flows across the US (2007–2017)</h3>
+          <p class="problem">Problem: national freight statistics only cover 132 large regions, which is too coarse to see where goods actually move, or which places the supply chain depends on.</p>
+          <ul>
+            <li>Co-developed a model that downscales national freight data to every US county for 7 food commodity groups in 2007, 2012 and 2017.</li>
+            <li>Used logistic regression and a gamma hurdle model to predict which county pairs trade and how much, with linear programming and mass-balance constraints to keep totals consistent with production and consumption.</li>
+            <li>Used multi-criteria decision analysis to find the core hub counties that the network depends on.</li>
+          </ul>
+          <p class="result"><b>Result:</b> an open dataset of 206 million flows (1,200+ downloads, 40+ citations), now used in supply chain chokepoint and risk research. The same hub counties stay central across all three years.</p>
+          <a class="more" href="https://doi.org/10.1088/1748-9326/ac5270" target="_blank" rel="noopener">Read the paper →</a> &nbsp; <a class="more" href="https://doi.org/10.13012/B2IDB-9585947_V1" target="_blank" rel="noopener">Get the data →</a>
+          <div class="tags"><span class="tag">Origin–destination modeling</span><span class="tag">Linear programming</span><span class="tag">Machine learning</span><span class="tag">Network analysis</span><span class="tag">Big data</span></div>
+        </div>
+      </div>
+
       <div class="card">
         <h3>Transport upgrades and commodity supply chains</h3>
         <p class="problem">Problem: how do road improvements change cost and flows in maize and cassava supply chains?</p>
@@ -151,16 +187,6 @@
           <li>Ran infrastructure scenarios to estimate impacts on transport cost and trade flows.</li>
         </ul>
         <div class="tags"><span class="tag">Transportation modeling</span><span class="tag">Scenario analysis</span><span class="tag">Logistics cost</span></div>
-      </div>
-
-      <div class="card">
-        <h3>National freight flow dataset (US, 2007–2017)</h3>
-        <p class="problem">Problem: official freight data is too coarse to see county-to-county food movements.</p>
-        <ul>
-          <li>Estimated food flows between all US counties across a decade of data.</li>
-          <li>My most-cited work (40+ citations); a resource others use for supply chain and risk analysis.</li>
-        </ul>
-        <div class="tags"><span class="tag">Origin–destination flows</span><span class="tag">Big data</span><span class="tag">Freight analytics</span></div>
       </div>
 
       <div class="card">
